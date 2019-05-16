@@ -18,3 +18,4 @@ Route::get('/instagram/auth',"AddUserController@index")->name('instaAuth');
 
 Route::post('/instagram/auth',"AddUserController@resp")->name('instaAuth');
 Route::get('/instagram/addphoto',"AddPhotoController@add")->name('addphoto');
+Route::post('/instagram/addphoto',"AddPhotoController@addToDatabase")->name('addToDatabase');
